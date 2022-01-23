@@ -4,6 +4,7 @@ const bcrypt = require('bcrypt');
 const path = require("path");
 const bodyParser = require('body-parser');
 const users = require('./data').userDB;
+const port = process.env.PORT || 3000;
 
 const app = express();
 const server = http.createServer(app);
